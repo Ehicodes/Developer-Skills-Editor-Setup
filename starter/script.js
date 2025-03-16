@@ -28,9 +28,11 @@ const calcTempAmplitude = function (temps) {
     if (curTemp < min) min = curTemp;
   }
   console.log(max, min);
+  return max - min;
 };
 
-calcTempAmplitude(temperatures);
+const amplitude = calcTempAmplitude(temperatures);
+console.log(amplitude);
 //before we start the loop, the max will be the first element of the array, max = 3;
 // max = 3
 // max = 7
