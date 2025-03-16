@@ -24,8 +24,9 @@ const calcTempAmplitude = function (temps) {
     const curTemp = temps[i];
 
     if (curTemp > max) max = curTemp;
+    if (curTemp < min) min = curTemp;
   }
-  console.log(max);
+  console.log(max, min);
 };
 
 calcTempAmplitude(temperatures);
